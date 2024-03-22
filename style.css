@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url(images/Overpass-Regular.ttf) format("truetype");
+}
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    /* font size */
+    --fs-150: 15px;
+
+    /* font weight  */
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /* font family  */
+    --ff-overpass: 'Overpass';
+}
+.fs-150 {
+    font-size: var(--fs-150);
+}
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+.ff-overpass {
+    font-family: var(--ff-overpass);
+}
+.text-color {
+    color: var(--Light-Grey);
+}
+.text-white {
+    color: var(--White);
+}
+.bg-button {
+    background: var(--Orange);
+    color: var(--White);
+}
+.bg-container {
+    background: var(--Dark-Blue);
+}
+.bg-body {
+    background: var(--Very-Dark-Blue);
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, p {
+    font-weight: var(--fw-400);
+}
+input, 
+textarea, 
+select, 
+button {
+    font: inherit;
+}
+.flex {
+    display: flex;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.container {
+    flex-direction: column;
+    width: 90%;
+    max-width: 375px;
+    position: relative;
+    border-radius: 10px;
+}
+.hidden {
+    display: none;
+}
+.active {
+    display: block;
+}
+.appreciation > p {
+    text-align: center;
+}
+.card {
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+.details {
+    align-items: start;
+}
+.details > img {
+    align-self: start;
+    border-radius: 50%;
+    padding: .7rem;
+    background: var(--Very-Dark-Blue);
+    opacity: .6;
+}
+.btn {
+    margin: 0 auto;
+    gap: 1rem;
+    justify-content: center;
+}
+.btn > button {
+    border-radius: 50%;
+    padding: 1rem 1.3rem;
+    color: var(--Medium-Grey);
+    text-align: center;
+    background: var(--Very-Dark-Blue);
+    border: 0;
+    opacity: .7;
+    cursor: pointer;
+}
+.card > button {
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: .8rem;
+    border: 0;
+}
+.card > button:hover, 
+.card > button:focus {
+    background: var(--White);
+    color: var(--Orange);
+}
+.btn > button:focus,
+.btn > button:hover {
+    color: var(--White);
+    background: var(--Orange);
+}
+.card > .rating {
+    color: var(--Orange);
+    background: var(--Very-Dark-Blue);
+    opacity: .7;
+    padding: .5rem 1rem;
+    border-radius: 30px;
+    margin: .5rem;
+}
